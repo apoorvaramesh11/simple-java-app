@@ -33,7 +33,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t img-1 .'
+                sh 'docker build -t apoorvar12/java-demo:latest .'
             }
         }
 
@@ -41,13 +41,13 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                sh 'docker push img-1'
+                sh 'docker push apoorvar12/java-demo:latest'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker run --rm img-1'
+                sh 'docker run --rm apoorvar12/java-demo:latest'
             }
         }
     }
