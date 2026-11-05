@@ -7,7 +7,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: 'main',
-                    url: 'YOUR_GITHUB_REPOSITORY_URL'
+                    url: 'https://github.com/apoorvaramesh11/simple-java-app.git'
             }
         }
 
