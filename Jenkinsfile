@@ -49,7 +49,7 @@ pipeline {
 
         stage('Run container'){
             steps{
-                sh 'docker run --rm -it -d -p 80:80 ${FULL_IMAGE} sleep 30' 
+                sh 'docker run --rm -it -d -p 80:80 ${FULL_IMAGE} sleep 300' 
             }
         }
     }
